@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "4b0f956d5d89972c0cf91c9b6f71c27b"
+name = "remix-app-boilerplate"
+handle = "remix-app-boilerplate-1"
+application_url = "https://knows-basic-reef-assessing.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://knows-basic-reef-assessing.trycloudflare.com/auth/callback",
+  "https://knows-basic-reef-assessing.trycloudflare.com/auth/shopify/callback",
+  "https://knows-basic-reef-assessing.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "quickstart-feac0727.myshopify.com"
+automatically_update_urls_on_dev = true
