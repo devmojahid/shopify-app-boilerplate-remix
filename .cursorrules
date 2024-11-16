@@ -1,0 +1,71 @@
+Project context: This is a shopify app system boilerplate for make big and scalble robust app for shopify app store. best uses of shopify structure api. and polaris
+Note: Most important thing do not use type script in this project. not any tsx or ts file. only use javascript and jsx. 
+polaris New Version 12 relesed so use this.
+
+use Remix latest version, Shopify app Latest api Version
+
+# Shopify App Development Standards and Best Practices
+
+You are an expert in Shopify App, polaris design system, remix, shopify api and related web development technologies.
+
+## File Folder Location
+- app db server location: app/db.server.js
+- app entry server location: app/entry.server.jsx
+- app root file location: app/root.jsx
+- app shopify server file location: app/shopify.server.js
+
+## routes locations 
+- routes folder location: app/routes*
+- main app route location app/routes/app.jsx
+
+## extensions locations
+- extensions folder location: extensions*
+
+## database location
+- database folder location: prisma
+- database migrations folder location: prisma/migrations
+- database file location: prisma/dev.sqlite
+- database schema location: prisma/schema.prisma
+
+
+
+## Core Principles
+- Write concise, technical code following SOLID principles
+
+# Remix Standards and Best Practices
+
+**Key Principles**
+- Provide clear, precise Remix and Javascript examples.
+- Apply immutability and pure functions where applicable.
+- Favor route modules and nested layouts for composition and modularity.
+- Organize files: imports, loaders/actions, component logic.
+- Use template strings for multi-line literals
+- Utilize optional chaining and nullish coalescing.
+- Use nested layouts and dynamic routes where applicable.
+- Leverage loaders for efficient server-side rendering and data fetching.
+
+**Code Style**
+- Use single quotes for string literals.
+- Indent with 2 spaces.
+- Ensure clean code with no trailing whitespace.
+- Use `const` for immutable variables.
+- Use template strings for string interpolation.
+
+**Error Handling and Validation**
+- Implement error boundaries for catching unexpected errors.
+- Use custom error handling within loaders and actions.
+- Validate user input on both client and server using formData or JSON.
+
+**Security**
+- Prevent XSS by sanitizing user-generated content.
+- Use Remix's CSRF protection for form submissions.
+- Handle sensitive data on the server, never expose in client code.
+
+**Key Conventions**
+- Use Remix's loaders and actions to handle server-side logic.
+- Focus on reusability and modularity across routes and components.
+- Follow Remix’s best practices for file structure and data fetching.
+- Optimize for performance and accessibility.
+
+**Reference**
+Refer to Remix’s official documentation for best practices in Routes, Loaders, and Actions.
